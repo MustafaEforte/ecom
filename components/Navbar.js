@@ -3,7 +3,7 @@ import { Container, Stack } from "@mui/system";
 import React from "react";
 import SearchIcon from "@mui/icons-material/Search";
 import PersonIcon from "@mui/icons-material/Person";
-import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 const Navbar = () => {
   return (
     <Container maxWidth="lg">
@@ -20,7 +20,7 @@ const Navbar = () => {
             </div>
           </Grid>
       
-            <Grid item xs={6} sx={{display: "flex", justifyContent: "center", alignItems: "center" }} mx={10}>
+            <Grid item xs={8} sx={{display: "flex", justifyContent: "center", alignItems: "center" }} >
                 <Stack direction="row" spacing={6}>
                     <Typography>Home</Typography>
                     <Typography>Shop</Typography>
@@ -30,11 +30,11 @@ const Navbar = () => {
                     <Typography>Pages</Typography>
                 </Stack>
             </Grid>
-            <Grid>
+            <Grid item xs={2} sx={{display: "flex", justifyContent: "center", alignItems: "center" }}>
                 <Stack direction="row" spacing={4}>
                     <SearchIcon/>
                     <PersonIcon/>
-                    <ShoppingCartIcon/>
+                    <ShoppingCartOutlinedIcon   />
                 </Stack>
             </Grid>
         </Grid>
