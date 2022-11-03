@@ -23,23 +23,23 @@ const Navbar = () => {
     },
     {
       name: "Shop",
-      path: "/",
+      path: "/shop",
     },
     {
       name: "About",
-      path: "/",
+      path: "/about",
     },
     {
       name: "Latest",
-      path: "/",
+      path: "/latest",
     },
     {
       name: "Blog",
-      path: "/",
+      path: "/blog",
     },
     {
       name: "Pages",
-      path: "/",
+      path: "/pages",
     },
   ];
   return (
@@ -69,7 +69,7 @@ const Navbar = () => {
                   
                 >
                   {list.map((item) => {
-                    return <Link href={item.path}>{item.name}</Link>;
+                    return <Link href={`${item.path}`}>{item.name}</Link>;
                   })}
                 </Stack>
               </Grid>
