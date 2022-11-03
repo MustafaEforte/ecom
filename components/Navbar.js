@@ -23,36 +23,36 @@ const Navbar = () => {
     },
     {
       name: "Shop",
-      path: "/",
+      path: "/shop",
     },
     {
       name: "About",
-      path: "/",
+      path: "/about",
     },
     {
       name: "Latest",
-      path: "/",
+      path: "/latest",
     },
     {
       name: "Blog",
-      path: "/",
+      path: "/blog",
     },
     {
       name: "Pages",
-      path: "/",
+      path: "/pages",
     },
   ];
   return (
     <>
       
-        <Grid container >
+        <Grid container sx={{position: "sticky"}}>
           <Grid item xs={12} >
             {/* Web View */}
 
             <Grid container py={5}>
               <Grid item xs={4} sm={4} md={2} lg={2} xl={2} sx={{display: "flex",alignItem: "center", justifyContent: "end", width: "100%"}}>
                   <img src={logo} />
-                
+                {/* <Image src={require("/public/assests/Timed_6_30.png")}  /> */}
               </Grid>
               <Grid item xs={7} sx={{
                     display: {
@@ -69,7 +69,7 @@ const Navbar = () => {
                   
                 >
                   {list.map((item) => {
-                    return <Link href={item.path}>{item.name}</Link>;
+                    return <Link href={`${item.path}`}>{item.name}</Link>;
                   })}
                 </Stack>
               </Grid>
@@ -138,9 +138,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-// const NavSec = styled(Grid)`
-//   @media screen and (max-width: 899px) {
-//     display: none !important;
-//   }
-// `;
