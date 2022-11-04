@@ -128,6 +128,18 @@ export default function Home() {
         <Box mb={10}>
           <Products />
         </Box>
+          <Container>
+          <Grid container>
+            <Grid item xs={6}>
+            <Typography variant='h2' py={2}>Watch of Choice</Typography>
+            <Typography py={2}>Enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</Typography>
+            <Button variant='contained' sx={{backgroundColor: "red"}}>Show Watches</Button>
+            </Grid>
+            <Grid item xs={6} display="flex" justifyContent="end" alignItems="center">
+              <Image src={require('/public/assests/xchoce_watch1.png.pagespeed.ic.JqdVtLwPVf.webp')}/>
+            </Grid>
+          </Grid>
+          </Container>
       </Grid>
     </Grid>
   );
